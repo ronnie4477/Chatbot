@@ -27,7 +27,7 @@ st.title(' Chatbot With OPENAI API')
 input_text=st.text_input("Search the topic u want")
 
 # openAI LLm 
-llm=ChatOpenAI(model="gpt-3.5-turbo")
+llm=ChatOpenAI(model="")
 output_parser=StrOutputParser()
 chain=prompt|llm|output_parser
 
